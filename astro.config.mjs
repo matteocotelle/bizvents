@@ -13,7 +13,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   base: '/bizvents',
-  site: 'https://example.com',
+  site: 'https://matteocotelle.github.io/',
   integrations: [mdx(), sitemap()],
 
   vite: {
