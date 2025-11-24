@@ -14,6 +14,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   base: '/bizvents',
   site: 'https://matteocotelle.github.io/',
+  build: {
+    assetsPrefix: '.',
+  },
   integrations: [mdx(), sitemap()],
 
   vite: {
