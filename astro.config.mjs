@@ -12,8 +12,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  base: '/bizvents',
-  site: 'https://matteocotelle.github.io/',
+  //base: '/bizvents',
+  site: 'https://www.bizvents.com/',
   build: {
     assetsPrefix: '.',
   },
