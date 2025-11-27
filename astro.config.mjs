@@ -7,16 +7,11 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-// --- Retirez cette ligne :
-// import tailwindcss from '@tailwindcss/vite'; 
-
 // https://astro.build/config
 export default defineConfig({
-  //base: '/bizvents',
+  // On supprime base et assetsPrefix car on est sur Vercel (racine du site)
   site: 'https://www.bizvents.com/',
-  build: {
-    assetsPrefix: '.',
-  },
+  
   integrations: [mdx(), sitemap()],
 
   vite: {
